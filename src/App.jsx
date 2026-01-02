@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom"; // ✅ make sure to import these
+
 import "./67.css";
 import Video from "./pages/video";
 import {
@@ -10,14 +11,13 @@ import {
   ArticleBox,
   AsideBox,
   FigureBox,
-  DetailsBox
+  DetailsBox,
 } from "./components";
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [boxText, setBoxText] = useState("This is the original text.");
 
-  // ✅ useEffect (side effect: DOM manipulation)
   useEffect(() => {
     if (darkMode) {
       document.body.classList.add("dark");
@@ -35,9 +35,7 @@ export default function App() {
     <>
       <Header />
       <Navbar />
-      
 
-      
       <Routes>
         <Route
           path="/"
@@ -54,15 +52,15 @@ export default function App() {
                 <a
                   href="https://youtu.be/E9de-cmycx8?si=C2MkrpHpfO2KfrlN"
                   target="_blank"
+                  rel="noopener noreferrer"
                   title="cool link"
                 >
                   website
-                </a>.
+                </a>
+                .
               </p>
 
               <input type="text" placeholder="Type here..." />
-              <p></p>
-
               <div id="box">{boxText}</div>
 
               <button onClick={toggleDark}>
@@ -75,7 +73,6 @@ export default function App() {
           }
         />
 
-        
         <Route
           path="/about"
           element={
@@ -85,7 +82,8 @@ export default function App() {
             </main>
           }
         />
-         <Route path="/video" element={<Video />} />
+
+        <Route path="/video" element={<Video />} />
       </Routes>
 
       <Footer />

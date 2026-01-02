@@ -1,20 +1,19 @@
-
-
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav>
-      
+    <nav className="navbar navbar-dark bg-dark navbar-expand">
+      <div className="container">
+        <span className="navbar-brand">Portfolio</span>
 
-      <div style={{ marginTop: "10px" }}>
-        <Link to="/" style={{ marginRight: "15px", color: "#ffbf66" }}>
-          Home
-        </Link>
-
-        <Link to="/video" style={{ color: "#ffbf66" }}>
-          Video
-        </Link>
+        <div className="navbar-nav">
+          <Link className="nav-link" to="/">
+            Home
+          </Link>
+          <Link className="nav-link" to="/video">
+            Video
+          </Link>
+        </div>
       </div>
     </nav>
   );
