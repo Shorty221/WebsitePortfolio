@@ -1,14 +1,15 @@
-
 //  src/components/ArticleBox.jsx
-
 export default function ArticleBox() {
   return (
     <article className="highlight-box">
-      <h2>Article Content</h2>
-      <p >This is an article. It is independent content.</p>
-      <p>
-        Published on <time dateTime="2025-02-01">February 1, 2025</time>.
-      </p>
+      <h2>Things I Do</h2>
+
+      <ul>
+        <li>Use Linux on an external storage</li>
+        <li>Play Video Games (Primarily FPS)</li>
+        <li>Sleep (a lot)</li>
+        <li>And many more</li>
+      </ul>
     </article>
   );
 }
