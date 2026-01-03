@@ -60,9 +60,6 @@ export default function App() {
                 .
               </p>
 
-              <input type="text" placeholder="Type here..." />
-              <div id="box">{boxText}</div>
-
               <button onClick={toggleDark}>
                 {darkMode ? "Turn Light Mode" : "Turn Dark Mode"}
               </button>
