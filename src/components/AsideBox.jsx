@@ -2,8 +2,8 @@
 
 export default function AsideBox() {
   return (
-    <aside className="highlight-box">
-      <p>I also like RickRolling people</p>
+    <aside className="highlight-box ">
+      <p>I have nothing to put here yet.</p>
     </aside>
   );
 }

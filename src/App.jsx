@@ -48,14 +48,14 @@ export default function App() {
               <DetailsBox />
 
               <p>
-                Visit my{" "}
+                DON'T CLICK THIS{" "}
                 <a
                   href="https://youtu.be/E9de-cmycx8?si=C2MkrpHpfO2KfrlN"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="cool link"
                 >
-                  website
+                  LINK
                 </a>
                 .
               </p>
