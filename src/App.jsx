@@ -16,7 +16,6 @@ import {
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
-  const [boxText, setBoxText] = useState("This is the original text.");
 
   useEffect(() => {
     if (darkMode) {
@@ -40,13 +39,19 @@ export default function App() {
         <Route
           path="/"
           element={
-            <main>
-              <SectionBox />
-              <ArticleBox />
-              <AsideBox />
-              <FigureBox />
-              <DetailsBox />
+            <main className="container my-4">
+              <div className="row">
+                <div className="col-md-8">
+                  <SectionBox />
+                  <ArticleBox />
+                </div>
+                <div className="col-md-4">
+                  <AsideBox />
+                </div>
 
+                <FigureBox />
+                <DetailsBox />
+              </div>
               <p>
                 DON'T CLICK THIS{" "}
                 <a
@@ -60,12 +65,18 @@ export default function App() {
                 .
               </p>
 
-              <button onClick={toggleDark}>
+              <button className="btn btn-primary" onClick={toggleDark}>
                 {darkMode ? "Turn Light Mode" : "Turn Dark Mode"}
               </button>
-              <button onClick={showAlert}>Show Alert</button>
-              <button onClick={changeText}>Change Text</button>
-              <button onClick={reloadSite}>Reload website</button>
+              <button className="btn btn-primary" onClick={showAlert}>
+                Show Alert
+              </button>
+              <button className="btn btn-primary" onClick={changeText}>
+                Change Text
+              </button>
+              <button className="btn btn-primary" onClick={reloadSite}>
+                Reload website
+              </button>
             </main>
           }
         />

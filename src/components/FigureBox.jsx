@@ -1,5 +1,3 @@
-
-
 //  src/components/FigureBox.jsx
 
 export default function FigureBox() {
