@@ -9,7 +9,7 @@ export default function Navbar() {
             Home
           </Link>
           <Link className="nav-link text-light fs-5" to="/video">
-            Video
+            {/*Video*/}
           </Link>
         </div>
       </div>

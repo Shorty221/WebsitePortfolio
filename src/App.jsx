@@ -41,6 +41,7 @@ export default function App() {
           element={
             <main className="container my-4">
               <div className="row">
+                <FigureBox />
                 <div className="col-md-8">
                   <SectionBox />
                   <ArticleBox />
@@ -49,13 +50,12 @@ export default function App() {
                   <AsideBox />
                 </div>
 
-                <FigureBox />
                 <DetailsBox />
               </div>
               <p>
                 DON'T CLICK THIS{" "}
                 <a
-                  href="https://youtu.be/E9de-cmycx8?si=C2MkrpHpfO2KfrlN"
+                  href="https://streamable.com/lf027o"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="cool link"
@@ -71,9 +71,7 @@ export default function App() {
               <button className="btn btn-primary" onClick={showAlert}>
                 Show Alert
               </button>
-              <button className="btn btn-primary" onClick={changeText}>
-                Change Text
-              </button>
+
               <button className="btn btn-primary" onClick={reloadSite}>
                 Reload website
               </button>
@@ -81,17 +79,7 @@ export default function App() {
           }
         />
 
-        <Route
-          path="/about"
-          element={
-            <main>
-              <h2>About Page</h2>
-              <p>This page is handled by react-router-dom.</p>
-            </main>
-          }
-        />
-
-        <Route path="/video" element={<Video />} />
+        {/*<Route path="/video" element={<Video />} /> */}
       </Routes>
 
       <Footer />

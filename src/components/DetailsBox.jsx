@@ -3,14 +3,18 @@
 export default function DetailsBox() {
   return (
     <details className="highlight-box">
-      <summary>Click to expand details</summary>
-      <figure>
-        <img
-          src="https://variety.com/wp-content/uploads/2021/07/Rick-Astley-Never-Gonna-Give-You-Up.png?w=1000&h=667&crop=1&resize=1000%2C667"
-          alt="Placeholder image"
-        />
-        <figcaption>Never Gonna Give You Up.</figcaption>
-      </figure>
+      <summary>Experience, click this text learn more</summary>
+
+      <section className="details-content">
+        <ul>
+          <li>Used Tinkercad for Arduino projects and simulations</li>
+          <li>Python programming</li>
+          <li>Java development</li>
+          <li>SQL (relational databases)</li>
+          <li>NoSQL (non-relational databases)</li>
+          <li>Basic penetration testing knowledge</li>
+        </ul>
+      </section>
     </details>
   );
 }
