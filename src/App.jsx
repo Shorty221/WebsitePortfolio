@@ -62,7 +62,7 @@ export default function App() {
                 >
                   LINK
                 </a>
-                .
+                {""}Don't be mad at me when you regret it.
               </p>
 
               <button className="btn btn-primary" onClick={toggleDark}>
