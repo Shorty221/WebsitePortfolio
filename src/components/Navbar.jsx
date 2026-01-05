@@ -1,3 +1,4 @@
+//Navbar, this is where you can select where you want to go but so far I don't have anything to add yet
 import { Link } from "react-router-dom";
 
 export default function Navbar() {

@@ -1,8 +1,7 @@
+//Imports
 import { useState, useEffect } from "react";
-import { Routes, Route } from "react-router-dom"; // ✅ make sure to import these
-
+import { Routes, Route } from "react-router-dom";
 import "./67.css";
-import Video from "./pages/video";
 import {
   Header,
   Navbar,
@@ -14,7 +13,9 @@ import {
   DetailsBox,
 } from "./components";
 
+//Export Default App
 export default function App() {
+  //For Dark and Light Mode
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
@@ -26,15 +27,23 @@ export default function App() {
   }, [darkMode]);
 
   const toggleDark = () => setDarkMode(!darkMode);
-  const showAlert = () => alert("Button clicked!");
-  const changeText = () => setBoxText("The text has been changed!");
+  const showAlert = () =>
+    alert(`Never gonna give you up
+Never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry
+Never gonna say goodbye
+Never gonna tell a lie and hurt you`);
+
   const reloadSite = () => window.location.reload();
 
   return (
     <>
+      {/*Render Header, Navbar, Aside box, DetailsBox, ArticleBox*/}
       <Header />
       <Navbar />
 
+      {/*Routes (FigureBox, ArticleBox, DetailsBox, and AsideBox) */}
       <Routes>
         <Route
           path="/"
@@ -53,6 +62,7 @@ export default function App() {
                 <DetailsBox />
               </div>
               <p>
+                {/*This will direct you to hacked Cia codes don't click */}
                 DON'T CLICK THIS{" "}
                 <a
                   href="https://streamable.com/lf027o"
@@ -65,6 +75,7 @@ export default function App() {
                 {""}Don't be mad at me when you regret it.
               </p>
 
+              {/*Buttons for dark mode, Reload Website and Show Alert */}
               <button className="btn btn-primary" onClick={toggleDark}>
                 {darkMode ? "Turn Light Mode" : "Turn Dark Mode"}
               </button>
@@ -78,8 +89,6 @@ export default function App() {
             </main>
           }
         />
-
-        {/*<Route path="/video" element={<Video />} /> */}
       </Routes>
 
       <Footer />

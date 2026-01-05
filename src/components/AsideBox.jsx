@@ -1,4 +1,4 @@
-//  src/components/AsideBox.jsx
+// AsideBox, this is the "A tip from me" part
 
 export default function AsideBox() {
   return (

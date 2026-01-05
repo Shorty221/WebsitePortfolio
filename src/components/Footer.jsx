@@ -1,4 +1,4 @@
-//  src/components/Footer.jsx
+// Footer, this is on the bottom part where I put the ©
 
 export default function Footer() {
   return (

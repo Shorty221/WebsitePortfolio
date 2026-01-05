@@ -1,4 +1,4 @@
-//  src/components/DetailsBox.jsx
+//DetailsBox, experience part
 
 export default function DetailsBox() {
   return (

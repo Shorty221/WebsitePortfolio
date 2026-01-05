@@ -1,4 +1,4 @@
-//  src/components/ArticleBox.jsx
+// ArticleBox, Things I do part
 export default function ArticleBox() {
   return (
     <article className="highlight-box">

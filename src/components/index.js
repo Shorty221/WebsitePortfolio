@@ -1,3 +1,4 @@
+//This is just used to ease the importation to App.jsx. The last thing you want to do is type this on App.jsx, that's a long imports XD.
 export { default as Header } from "./Header";
 export { default as Navbar } from "./Navbar";
 export { default as Footer } from "./Footer";
