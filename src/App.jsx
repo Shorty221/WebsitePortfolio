@@ -13,6 +13,8 @@ import {
   DetailsBox,
 } from "./components";
 
+import Projects from "./pages/projects";
+
 //Export Default App
 export default function App() {
   //For Dark and Light Mode
@@ -89,6 +91,7 @@ Never gonna tell a lie and hurt you`);
             </main>
           }
         />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
 
       <Footer />

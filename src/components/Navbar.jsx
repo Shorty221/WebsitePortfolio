@@ -9,6 +9,11 @@ export default function Navbar() {
           <Link className="nav-link text-light fs-5" to="/">
             Home
           </Link>
+
+          <Link className="nav-link text-light fs-5" to="/projects">
+            Arduino Projects
+          </Link>
+
           <Link className="nav-link text-light fs-5" to="/video">
             {/*Video*/}
           </Link>
